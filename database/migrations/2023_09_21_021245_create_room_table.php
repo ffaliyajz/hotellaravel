@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('room_type');
             $table->decimal('price_per_night', 8, 2);
             $table->string('room_img')->nullable();
-            $table->integer('hotel_id');
+            $table->foreignId('hotel_id')->nullable()->constrained('hotel');
             $table->timestamps();
         });
 

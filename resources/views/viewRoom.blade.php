@@ -132,7 +132,7 @@
                 
         @endif --}}
 
-        <h3 class="room-title">List of Room Available from {{$hotel->name}}</h3><br>
+        <br><br><h3 class="room-title">List of Room Available from {{$hotel->name}}</h3><br>
         <div class="room-list">
                 @foreach ($rooms as $room)
                     <div class="room-card">
